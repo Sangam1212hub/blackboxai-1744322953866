@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - PrepXPro</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/custom.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Include Navbar -->
+    <div id="navbar-container"></div>
+
+    <!-- Header Section -->
+    <section class="pt-32 pb-20 bg-gradient-to-b from-blue-50 to-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 gradient-text">
+                    Master Java Development
+                </h1>
+                <p class="text-xl text-gray-600 mb-8">
+                    Comprehensive courses designed to take you from basics to advanced Java development concepts.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Overview Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-16 gradient-text">
+                Available Courses
+            </h2>
+
+            <!-- Featured Course -->
+            <div class="glass p-8 rounded-2xl mb-16 hover-card">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <div class="lg:col-span-2">
+                        <h3 class="text-2xl font-bold mb-4">7 Weeks of Java Development Preparation</h3>
+                        <p class="text-gray-600 mb-6">
+                            A comprehensive program covering everything from Java basics to advanced concepts, 
+                            design patterns, and interview preparation.
+                        </p>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+                            <div class="text-center p-4 bg-white rounded-lg shadow-sm">
+                                <div class="text-blue-600 text-2xl mb-2">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="text-sm text-gray-600">7 Weeks</div>
+                            </div>
+                            <div class="text-center p-4 bg-white rounded-lg shadow-sm">
+                                <div class="text-blue-600 text-2xl mb-2">
+                                    <i class="fas fa-video"></i>
+                                </div>
+                                <div class="text-sm text-gray-600">50+ Hours</div>
+                            </div>
+                            <div class="text-center p-4 bg-white rounded-lg shadow-sm">
+                                <div class="text-blue-600 text-2xl mb-2">
+                                    <i class="fas fa-tasks"></i>
+                                </div>
+                                <div class="text-sm text-gray-600">100+ Exercises</div>
+                            </div>
+                            <div class="text-center p-4 bg-white rounded-lg shadow-sm">
+                                <div class="text-blue-600 text-2xl mb-2">
+                                    <i class="fas fa-user-friends"></i>
+                                </div>
+                                <div class="text-sm text-gray-600">1:1 Mentoring</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-center items-center lg:items-end">
+                        <div class="text-3xl font-bold gradient-text mb-4">$499</div>
+                        <button class="btn-primary w-full lg:w-auto">
+                            Enroll Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Weekly Breakdown -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-16">
+                <!-- Week 1 -->
+                <div class="course-card">
+                    <div class="progress-ring-container">
+                        <svg class="progress-ring" width="60" height="60">
+                            <circle class="progress-ring__circle" stroke="#E2E8F0" stroke-width="4" fill="transparent" r="25" cx="30" cy="30"/>
+                            <circle class="progress-ring__circle" stroke="url(#gradient)" stroke-width="4" fill="transparent" r="25" cx="30" cy="30" data-progress="100"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-center">Week 1: Java Fundamentals</h3>
+                    <ul class="text-gray-600 space-y-2 mb-4">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Basic Syntax
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Data Types
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Control Flow
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <span class="text-sm text-gray-500">Mock Interview Score</span>
+                        <div class="text-lg font-semibold text-blue-600">9/10</div>
+                    </div>
+                </div>
+
+                <!-- Week 2 -->
+                <div class="course-card">
+                    <div class="progress-ring-container">
+                        <svg class="progress-ring" width="60" height="60">
+                            <circle class="progress-ring__circle" stroke="#E2E8F0" stroke-width="4" fill="transparent" r="25" cx="30" cy="30"/>
+                            <circle class="progress-ring__circle" stroke="url(#gradient)" stroke-width="4" fill="transparent" r="25" cx="30" cy="30" data-progress="85"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-center">Week 2: OOP Concepts</h3>
+                    <ul class="text-gray-600 space-y-2 mb-4">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Classes & Objects
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Inheritance
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Polymorphism
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <span class="text-sm text-gray-500">Mock Interview Score</span>
+                        <div class="text-lg font-semibold text-blue-600">8/10</div>
+                    </div>
+                </div>
+
+                <!-- Week 3 -->
+                <div class="course-card">
+                    <div class="progress-ring-container">
+                        <svg class="progress-ring" width="60" height="60">
+                            <circle class="progress-ring__circle" stroke="#E2E8F0" stroke-width="4" fill="transparent" r="25" cx="30" cy="30"/>
+                            <circle class="progress-ring__circle" stroke="url(#gradient)" stroke-width="4" fill="transparent" r="25" cx="30" cy="30" data-progress="70"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-center">Week 3: Collections</h3>
+                    <ul class="text-gray-600 space-y-2 mb-4">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Lists & Sets
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Maps
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Iterators
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <span class="text-sm text-gray-500">Mock Interview Score</span>
+                        <div class="text-lg font-semibold text-blue-600">8.5/10</div>
+                    </div>
+                </div>
+
+                <!-- Week 4 -->
+                <div class="course-card">
+                    <div class="progress-ring-container">
+                        <svg class="progress-ring" width="60" height="60">
+                            <circle class="progress-ring__circle" stroke="#E2E8F0" stroke-width="4" fill="transparent" r="25" cx="30" cy="30"/>
+                            <circle class="progress-ring__circle" stroke="url(#gradient)" stroke-width="4" fill="transparent" r="25" cx="30" cy="30" data-progress="60"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-center">Week 4: Exception Handling</h3>
+                    <ul class="text-gray-600 space-y-2 mb-4">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Try-Catch Blocks
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Custom Exceptions
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Best Practices
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <span class="text-sm text-gray-500">Mock Interview Score</span>
+                        <div class="text-lg font-semibold text-blue-600">8.7/10</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- View More Button -->
+            <div class="text-center">
+                <button class="btn-secondary">
+                    View All Weeks
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-16 gradient-text">
+                Flexible Pricing Options
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Basic Plan -->
+                <div class="glass p-8 rounded-xl hover-card">
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold mb-4">Basic</h3>
+                        <div class="text-4xl font-bold gradient-text">$299</div>
+                        <p class="text-gray-600 mt-2">Self-paced learning</p>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Course Materials
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Practice Exercises
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Community Access
+                        </li>
+                    </ul>
+                    <button class="btn-secondary w-full">
+                        Get Started
+                    </button>
+                </div>
+
+                <!-- Pro Plan -->
+                <div class="glass p-8 rounded-xl hover-card relative transform scale-105 z-10">
+                    <div class="absolute top-0 right-0 bg-blue-600 text-white px-4 py-1 rounded-tr-xl rounded-bl-xl text-sm">
+                        Popular
+                    </div>
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold mb-4">Pro</h3>
+                        <div class="text-4xl font-bold gradient-text">$499</div>
+                        <p class="text-gray-600 mt-2">Guided learning</p>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            All Basic Features
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            1:1 Mentoring
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Mock Interviews
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Career Guidance
+                        </li>
+                    </ul>
+                    <button class="btn-primary w-full">
+                        Get Started
+                    </button>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="glass p-8 rounded-xl hover-card">
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold mb-4">Enterprise</h3>
+                        <div class="text-4xl font-bold gradient-text">$999</div>
+                        <p class="text-gray-600 mt-2">Custom learning</p>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            All Pro Features
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Custom Curriculum
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Priority Support
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Team Training
+                        </li>
+                    </ul>
+                    <button class="btn-secondary w-full">
+                        Contact Us
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-16 gradient-text">
+                What Our Students Say
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg" 
+                             alt="Alex Thompson" 
+                             class="w-12 h-12 rounded-full object-cover">
+                        <div class="ml-4">
+                            <h4 class="font-semibold">Alex Thompson</h4>
+                            <p class="text-gray-600">Java Developer at Facebook</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">
+                        "The course structure and mentorship helped me transition from a junior to a senior developer position."
+                    </p>
+                </div>
+
+                <!-- Additional testimonials would follow the same pattern -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                Start Your Java Development Journey Today
+            </h2>
+            <p class="text-xl mb-8 opacity-90">
+                Join our community of successful developers and transform your career.
+            </p>
+            <button class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-200 transform hover:-translate-y-0.5">
+                Enroll Now
+            </button>
+        </div>
+    </section>
+
+    <!-- Include Footer -->
+    <div id="footer-container"></div>
+
+    <!-- SVG Gradients -->
+    <svg width="0" height="0" class="hidden">
+        <defs>
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:#3B82F6"/>
+                <stop offset="100%" style="stop-color:#8B5CF6"/>
+            </linearGradient>
+        </defs>
+    </svg>
+
+    <!-- Custom JavaScript -->
+    <script src="/js/main.js"></script>
+    
+    <!-- Load components -->
+    <script>
+        // Load navbar
+        fetch('/components/navbar.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('navbar-container').innerHTML = html;
+            });
+
+        // Load footer
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footer-container').innerHTML = html;
+            });
+    </script>
+</body>
+</html>
