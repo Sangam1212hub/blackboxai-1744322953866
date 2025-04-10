@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - PrepXPro</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/custom.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Include Navbar -->
+    <div id="navbar-container"></div>
+
+    <!-- Hero Header Section -->
+    <section class="pt-32 pb-20 bg-gradient-to-b from-blue-50 to-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 gradient-text">
+                    Stay Ahead with the Latest in Java Development
+                </h1>
+                <p class="text-xl text-gray-600 mb-8">
+                    Explore our blog for insights, tips, and resources to enhance your Java skills.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog List Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12 gradient-text">
+                Latest Blog Posts
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Blog Post 1 -->
+                <div class="glass p-6 rounded-xl hover-card">
+                    <img src="https://images.pexels.com/photos/1181672/pexels-photo-1181672.jpeg" alt="Blog Post 1" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Understanding Java Streams</h3>
+                    <p class="text-gray-600 mb-4">A deep dive into Java Streams and how they can simplify your code.</p>
+                    <a href="/pages/blog-post.html" class="text-blue-600 font-semibold">Read More</a>
+                </div>
+
+                <!-- Blog Post 2 -->
+                <div class="glass p-6 rounded-xl hover-card">
+                    <img src="https://images.pexels.com/photos/1181672/pexels-photo-1181672.jpeg" alt="Blog Post 2" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Top 10 Java Frameworks in 2023</h3>
+                    <p class="text-gray-600 mb-4">Explore the most popular Java frameworks and their use cases.</p>
+                    <a href="/pages/blog-post.html" class="text-blue-600 font-semibold">Read More</a>
+                </div>
+
+                <!-- Blog Post 3 -->
+                <div class="glass p-6 rounded-xl hover-card">
+                    <img src="https://images.pexels.com/photos/1181672/pexels-photo-1181672.jpeg" alt="Blog Post 3" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Effective Java Coding Practices</h3>
+                    <p class="text-gray-600 mb-4">Learn the best coding practices to write clean and maintainable Java code.</p>
+                    <a href="/pages/blog-post.html" class="text-blue-600 font-semibold">Read More</a>
+                </div>
+
+                <!-- Blog Post 4 -->
+                <div class="glass p-6 rounded-xl hover-card">
+                    <img src="https://images.pexels.com/photos/1181672/pexels-photo-1181672.jpeg" alt="Blog Post 4" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Java vs Python: Which One to Choose?</h3>
+                    <p class="text-gray-600 mb-4">A comparison of Java and Python to help you choose the right language for your projects.</p>
+                    <a href="/pages/blog-post.html" class="text-blue-600 font-semibold">Read More</a>
+                </div>
+
+                <!-- Blog Post 5 -->
+                <div class="glass p-6 rounded-xl hover-card">
+                    <img src="https://images.pexels.com/photos/1181672/pexels-photo-1181672.jpeg" alt="Blog Post 5" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">The Future of Java Development</h3>
+                    <p class="text-gray-600 mb-4">Insights into the future trends and developments in the Java ecosystem.</p>
+                    <a href="/pages/blog-post.html" class="text-blue-600 font-semibold">Read More</a>
+                </div>
+
+                <!-- Blog Post 6 -->
+                <div class="glass p-6 rounded-xl hover-card">
+                    <img src="https://images.pexels.com/photos/1181672/pexels-photo-1181672.jpeg" alt="Blog Post 6" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Debugging Java Applications</h3>
+                    <p class="text-gray-600 mb-4">Techniques and tools for effectively debugging Java applications.</p>
+                    <a href="/pages/blog-post.html" class="text-blue-600 font-semibold">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-6 gradient-text">
+                Subscribe to Our Newsletter
+            </h2>
+            <p class="text-xl mb-8">
+                Stay updated with the latest news and resources in Java development.
+            </p>
+            <form class="flex justify-center">
+                <input type="email" placeholder="Enter your email" class="form-input w-1/3 border border-gray-300 rounded-lg p-2 mr-2" required>
+                <button type="submit" class="btn-primary">
+                    Subscribe
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Include Footer -->
+    <div id="footer-container"></div>
+
+    <!-- Custom JavaScript -->
+    <script src="/js/main.js"></script>
+    
+    <!-- Load components -->
+    <script>
+        // Load navbar
+        fetch('/components/navbar.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('navbar-container').innerHTML = html;
+            });
+
+        // Load footer
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footer-container').innerHTML = html;
+            });
+    </script>
+</body>
+</html>
